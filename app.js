@@ -2,6 +2,7 @@
   const DATA = window.MANUAL_DATA;
   const items = DATA.items;
   const minors = DATA.minors;
+  const MICRO_UNIT_G = DATA.MICRO_UNIT_G || 25;
 
   const searchInput = document.getElementById('searchInput');
   const suggestList = document.getElementById('suggestList');
@@ -29,6 +30,26 @@
       return it.sample_g + 'g';
     }
     return null;
+  }
+
+  function sampleBadgeHtml(it) {
+    if (it.sample_kind === 'microbiological') {
+      if (it.sample_n) {
+        return `<span class="card-sample micro">미생물 n=${it.sample_n} · 개당 ${MICRO_UNIT_G}g↑</span>`;
+      }
+      return `<span class="card-sample micro">미생물 · 개수 확인 필요</span>`;
+    }
+    if (it.sample_kind === 'qualitative') {
+      return `<span class="card-sample muted">완제품 확인 (계량 불요)</span>`;
+    }
+    if (it.sample_kind === 'not_acceptable') {
+      return `<span class="card-sample unavail">접수 불가 항목</span>`;
+    }
+    const gram = fmtGram(it);
+    if (gram) {
+      return `<span class="card-sample">시료 ${gram}</span>`;
+    }
+    return `<span class="card-sample muted">시료량 확인 필요</span>`;
   }
 
   // ---- popular / recent chips (a few illustrative food types) ----
@@ -140,8 +161,8 @@
     let feeSumHasUnknown = false;
 
     const cardsHtml = list.map((it, idx) => {
-      const gram = fmtGram(it);
       const feeVat = it.fee_vat;
+      const isUnacceptable = it.sample_kind === 'not_acceptable';
 
       const specsHtml = it.specs && it.specs.length
         ? it.specs.map(s => escapeHtml(s)).join(' / ')
@@ -151,22 +172,22 @@
       if (it.designated) flags.push('<span class="flag designated">지정검사</span>');
       if (it.period_mfg) flags.push(`<span class="flag period">제조·가공 ${escapeHtml(it.period_mfg)}</span>`);
 
-      const sampleHtml = gram
-        ? `<span class="card-sample">시료 ${gram}</span>`
-        : `<span class="card-sample muted">${it.category === '자가품질검사' ? '완제품 단위 수거' : '별도 기준'}</span>`;
+      const checkboxHtml = isUnacceptable
+        ? '<span class="card-check-disabled"></span>'
+        : `<input type="checkbox" class="quote-check" data-idx="${idx}" data-fee="${feeVat === null || feeVat === undefined ? '' : feeVat}" data-kind="${it.sample_kind}" data-g="${it.sample_g === null || it.sample_g === undefined ? '' : it.sample_g}" data-n="${it.sample_n === null || it.sample_n === undefined ? '' : it.sample_n}" data-name="${escapeHtml(it.item)}" checked>`;
 
       return `
-        <div class="card">
+        <div class="card${isUnacceptable ? ' card-disabled' : ''}">
           <div class="card-top">
             <label class="card-check">
-              <input type="checkbox" class="quote-check" data-idx="${idx}" data-fee="${feeVat === null || feeVat === undefined ? '' : feeVat}" checked>
+              ${checkboxHtml}
               <span class="card-item-name">${escapeHtml(it.item)}</span>
             </label>
-            <span class="card-fee">${fmtWon(feeVat)}</span>
+            <span class="card-fee">${isUnacceptable ? '접수불가' : fmtWon(feeVat)}</span>
           </div>
           <div class="card-sub">
             <span class="card-spec">기준 ${specsHtml}</span>
-            ${sampleHtml}
+            ${sampleBadgeHtml(it)}
           </div>
           ${flags.length ? `<div class="card-flags">${flags.join('')}</div>` : ''}
           ${it.note ? `<div class="card-note">${escapeHtml(it.note)}</div>` : ''}
@@ -174,17 +195,21 @@
       `;
     }).join('');
 
-    // 초기값: 전체 선택된 상태의 합계
     list.forEach(it => {
+      if (it.sample_kind === 'not_acceptable') return;
       if (it.fee_vat === null || it.fee_vat === undefined) feeSumHasUnknown = true;
       else feeSum += it.fee_vat;
     });
 
     const summaryHtml = `
       <div class="summary-bar">
-        <span id="summaryLabel">항목 ${list.length}개 선택 (VAT포함)</span>
+        <span id="summaryLabel">항목 0개 선택 (VAT포함)</span>
         <span class="total" id="summaryTotal">${fmtWon(feeSum)}${feeSumHasUnknown ? '+' : ''}</span>
       </div>
+      <div class="sample-summary" id="sampleSummary"></div>
+      <label class="buffer-toggle">
+        <input type="checkbox" id="bufferToggle"> 여유분 30g 추가로 채취 (권장)
+      </label>
     `;
 
     resultArea.innerHTML = `
@@ -195,35 +220,78 @@
         </div>
         <div class="result-meta">${escapeHtml(catLabel)}</div>
       </div>
-      <div class="quote-hint">체크 해제하면 견적에서 제외됩니다</div>
+      <div class="quote-hint">체크 해제하면 견적/시료량에서 제외됩니다</div>
       ${cardsHtml}
       ${summaryHtml}
       <div class="guide-note">
         수수료는 부가세 포함 기준이며 변동될 수 있습니다.<br>
-        시료량 미표시 항목(미생물·중금속 등)은 완제품 단위로 별도 수거 기준이 적용됩니다.
+        이화학·미생물 시료는 서로 다른 용기에 나눠서 수거하는 것을 권장합니다.
       </div>
     `;
 
     const checkboxes = Array.prototype.slice.call(resultArea.querySelectorAll('.quote-check'));
     const summaryLabel = document.getElementById('summaryLabel');
     const summaryTotal = document.getElementById('summaryTotal');
+    const sampleSummary = document.getElementById('sampleSummary');
+    const bufferToggle = document.getElementById('bufferToggle');
 
-    function recalcQuote() {
-      let sum = 0;
-      let hasUnknown = false;
-      let checkedCount = 0;
+    function recalc() {
+      let sum = 0, hasUnknown = false, checkedCount = 0;
+      let physioG = 0, physioHasUnknown = false, physioNames = [];
+      const microItems = [];
+
       checkboxes.forEach(cb => {
         if (!cb.checked) return;
         checkedCount++;
         const feeStr = cb.dataset.fee;
         if (feeStr === '') hasUnknown = true;
         else sum += parseFloat(feeStr);
+
+        if (cb.dataset.kind === 'physicochemical') {
+          if (cb.dataset.g !== '') {
+            physioG += parseFloat(cb.dataset.g);
+            physioNames.push(cb.dataset.name + ' ' + cb.dataset.g + 'g');
+          } else {
+            physioHasUnknown = true;
+          }
+        } else if (cb.dataset.kind === 'microbiological') {
+          microItems.push({ name: cb.dataset.name, n: cb.dataset.n ? parseInt(cb.dataset.n, 10) : null });
+        }
       });
+
       summaryLabel.textContent = `항목 ${checkedCount}개 선택 (VAT포함)`;
       summaryTotal.textContent = fmtWon(sum) + (hasUnknown ? '+' : '');
+
+      const buffer = bufferToggle.checked ? 30 : 0;
+      const physioTotal = physioG + (physioG > 0 ? buffer : 0);
+
+      let html = '<div class="sample-title">수거해야 할 시료량</div>';
+
+      if (physioG > 0) {
+        html += `<div class="sample-row"><span class="sample-label">이화학</span><span class="sample-value">최소 ${Math.round(physioTotal)}g${physioHasUnknown ? '+' : ''}</span></div>`;
+        html += `<div class="sample-detail">${physioNames.map(escapeHtml).join(' + ')}${buffer ? ' + 여유분 30g' : ''}</div>`;
+      } else if (physioHasUnknown) {
+        html += `<div class="sample-row"><span class="sample-label">이화학</span><span class="sample-value">확인 필요</span></div>`;
+      }
+
+      microItems.forEach(m => {
+        if (m.n) {
+          html += `<div class="sample-row"><span class="sample-label">미생물 (${escapeHtml(m.name)})</span><span class="sample-value">${MICRO_UNIT_G}g × ${m.n}개</span></div>`;
+        } else {
+          html += `<div class="sample-row"><span class="sample-label">미생물 (${escapeHtml(m.name)})</span><span class="sample-value">개수 확인 필요</span></div>`;
+        }
+      });
+
+      if (physioG === 0 && !physioHasUnknown && microItems.length === 0) {
+        html += '<div class="sample-row"><span class="sample-label">계량 시료 없음 (완제품 확인용 항목만 선택됨)</span></div>';
+      }
+
+      sampleSummary.innerHTML = html;
     }
 
-    checkboxes.forEach(cb => cb.addEventListener('change', recalcQuote));
+    checkboxes.forEach(cb => cb.addEventListener('change', recalc));
+    bufferToggle.addEventListener('change', recalc);
+    recalc();
   }
 
   // Enter key selects top suggestion
