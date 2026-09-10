@@ -208,4 +208,177 @@
       if (first) selectMinor(first.minor);
     }
   });
+
+  // ---- 잠재고객 발굴 탭 ----
+  const pageTitle = document.getElementById('pageTitle');
+  const manualSearchWrap = document.getElementById('manualSearchWrap');
+  const leadsSearchWrap = document.getElementById('leadsSearchWrap');
+  const leadsArea = document.getElementById('leadsArea');
+  const leadsSearchInput = document.getElementById('leadsSearchInput');
+  const leadsClearBtn = document.getElementById('leadsClearBtn');
+  const regionChips = Array.prototype.slice.call(document.querySelectorAll('.region-chip'));
+  const tabBtns = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+
+  let leadsData = null;
+  let leadsLoadError = false;
+  let currentRegion = 'all';
+  let leadsRenderLimit = 30;
+
+  function switchTab(tab) {
+    tabBtns.forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+    if (tab === 'manual') {
+      pageTitle.textContent = '시험분석 매뉴얼 검색';
+      manualSearchWrap.style.display = '';
+      leadsSearchWrap.style.display = 'none';
+      leadsArea.style.display = 'none';
+      if (resultArea.innerHTML.trim()) {
+        resultArea.style.display = '';
+        emptyState.style.display = 'none';
+      } else {
+        emptyState.style.display = '';
+      }
+    } else {
+      pageTitle.textContent = '잠재고객 발굴';
+      manualSearchWrap.style.display = 'none';
+      leadsSearchWrap.style.display = '';
+      resultArea.style.display = 'none';
+      emptyState.style.display = 'none';
+      leadsArea.style.display = '';
+      loadLeadsIfNeeded();
+    }
+  }
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+
+  function loadLeadsIfNeeded() {
+    if (leadsData || leadsLoadError) { renderLeads(); return; }
+    leadsArea.innerHTML = '<div class="guide-note" style="margin-top:40px;">불러오는 중...</div>';
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'company-data.json', true);
+    xhr.onload = function() {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        try {
+          var json = JSON.parse(xhr.responseText);
+          leadsData = json.companies || [];
+          itemCountBadge.textContent = leadsData.length + '개 업체';
+          renderLeads();
+        } catch (e) {
+          leadsLoadError = true;
+          leadsArea.innerHTML = '<div class="guide-note" style="margin-top:40px;">업체 데이터 형식이 올바르지 않습니다.</div>';
+        }
+      } else {
+        leadsLoadError = true;
+        leadsArea.innerHTML = '<div class="guide-note" style="margin-top:40px;">업체 데이터를 불러오지 못했습니다.<br>company-data.json 파일이 저장소에 있는지 확인해주세요.</div>';
+      }
+    };
+    xhr.onerror = function() {
+      leadsLoadError = true;
+      leadsArea.innerHTML = '<div class="guide-note" style="margin-top:40px;">업체 데이터를 불러오지 못했습니다.<br>company-data.json 파일이 저장소에 있는지 확인해주세요.</div>';
+    };
+    xhr.send();
+  }
+
+  function fmtDate(ymd) {
+    if (!ymd || ymd.length !== 8) return ymd || '-';
+    return `${ymd.slice(0,4)}.${ymd.slice(4,6)}.${ymd.slice(6,8)}`;
+  }
+
+  function isRecent(ymd) {
+    if (!ymd || ymd.length !== 8) return false;
+    const d = new Date(`${ymd.slice(0,4)}-${ymd.slice(4,6)}-${ymd.slice(6,8)}`);
+    const days = (Date.now() - d.getTime()) / (1000 * 60 * 60 * 24);
+    return days >= 0 && days <= 90;
+  }
+
+  function matchesRegion(company, region) {
+    if (region === 'all') return true;
+    const map = { '부산': '부산광역시', '울산': '울산광역시', '경남': '경상남도' };
+    return (company.address || '').includes(map[region] || region);
+  }
+
+  regionChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      regionChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentRegion = chip.dataset.region;
+      leadsRenderLimit = 30;
+      renderLeads();
+    });
+  });
+
+  leadsSearchInput.addEventListener('input', () => {
+    leadsClearBtn.classList.toggle('show', leadsSearchInput.value.length > 0);
+    leadsRenderLimit = 30;
+    renderLeads();
+  });
+
+  leadsClearBtn.addEventListener('click', () => {
+    leadsSearchInput.value = '';
+    leadsClearBtn.classList.remove('show');
+    leadsRenderLimit = 30;
+    renderLeads();
+  });
+
+  function renderLeads() {
+    if (!leadsData) return;
+    const q = leadsSearchInput.value.trim();
+
+    let filtered = leadsData.filter(c => matchesRegion(c, currentRegion));
+    if (q) {
+      filtered = filtered.filter(c =>
+        (c.name || '').includes(q) || (c.address || '').includes(q)
+      );
+    }
+    // 최근 인허가일자 순 정렬 (신규 업체가 위로)
+    filtered = filtered.slice().sort((a, b) => (b.permit_date || '').localeCompare(a.permit_date || ''));
+
+    const total = filtered.length;
+    const shown = filtered.slice(0, leadsRenderLimit);
+
+    const cardsHtml = shown.map(c => {
+      const recent = isRecent(c.permit_date);
+      const closed = (c.status || '').includes('폐업');
+      return `
+        <div class="lead-card">
+          <div class="lead-top">
+            <span class="lead-name">${escapeHtml(c.name || '이름없음')}</span>
+            ${recent ? '<span class="lead-badge new">최근 인허가</span>' : ''}
+            ${closed ? '<span class="lead-badge closed">폐업</span>' : ''}
+          </div>
+          <div class="lead-addr">${escapeHtml(c.address || '주소 미상')}</div>
+          <div class="lead-meta">
+            <span>인허가 ${fmtDate(c.permit_date)}</span>
+            ${c.tel ? `<a href="tel:${escapeHtml(c.tel)}">${escapeHtml(c.tel)}</a>` : ''}
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    const loadMoreHtml = total > shown.length
+      ? `<button class="load-more-btn" id="loadMoreBtn">더 보기 (${shown.length}/${total})</button>`
+      : '';
+
+    leadsArea.innerHTML = `
+      <div class="leads-count-row">
+        <span>검색 결과 ${total}개</span>
+        <span>인허가일 최신순</span>
+      </div>
+      ${cardsHtml || '<div class="guide-note" style="margin-top:20px;">조건에 맞는 업체가 없습니다.</div>'}
+      ${loadMoreHtml}
+      <div class="guide-note">
+        본 리스트는 공공데이터(행정안전부 식품제조가공업 조회서비스) 기준이며,<br>
+        거래 여부는 사내 전산에서 별도로 확인해주세요.
+      </div>
+    `;
+
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        leadsRenderLimit += 30;
+        renderLeads();
+      });
+    }
+  }
 })();
