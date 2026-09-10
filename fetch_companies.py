@@ -20,16 +20,26 @@ EXCLUDE_STATUS_KEYWORDS = ["폐업", "취소", "말소"]
 
 
 def call_api(region, page_no, num_of_rows=100):
-    params = {
-        "serviceKey": SERVICE_KEY,
+    # serviceKey는 data.go.kr에서 이미 URL-인코딩된 값으로 내려오므로
+    # 여기서 다시 인코딩하면 이중 인코딩이 되어 인증 실패(403)가 난다.
+    # -> serviceKey만 raw로 붙이고, 나머지 파라미터만 인코딩한다.
+    other_params = {
         "pageNo": str(page_no),
         "numOfRows": str(num_of_rows),
         "returnType": "JSON",
         "cond[ROAD_NM_ADDR::LIKE]": region,
     }
-    url = BASE_URL + "?" + urllib.parse.urlencode(params, quote_via=urllib.parse.quote)
-    with urllib.request.urlopen(url, timeout=30) as resp:
-        raw = resp.read().decode("utf-8")
+    query = urllib.parse.urlencode(other_params, quote_via=urllib.parse.quote)
+    url = f"{BASE_URL}?serviceKey={SERVICE_KEY}&{query}"
+
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            raw = resp.read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        print(f"[HTTP {e.code}] 응답 본문:\n{body[:1000]}")
+        raise
     return json.loads(raw)
 
 
