@@ -242,7 +242,8 @@
     function recalc() {
       let sum = 0, hasUnknown = false, checkedCount = 0;
       let physioG = 0, physioHasUnknown = false, physioNames = [];
-      const microItems = [];
+      const microByN = {}; // n값 -> [항목명들]
+      let microUnknownNames = [];
 
       checkboxes.forEach(cb => {
         if (!cb.checked) return;
@@ -259,7 +260,13 @@
             physioHasUnknown = true;
           }
         } else if (cb.dataset.kind === 'microbiological') {
-          microItems.push({ name: cb.dataset.name, n: cb.dataset.n ? parseInt(cb.dataset.n, 10) : null });
+          if (cb.dataset.n) {
+            const n = cb.dataset.n;
+            if (!microByN[n]) microByN[n] = [];
+            microByN[n].push(cb.dataset.name);
+          } else {
+            microUnknownNames.push(cb.dataset.name);
+          }
         }
       });
 
@@ -278,15 +285,24 @@
         html += `<div class="sample-row"><span class="sample-label">이화학</span><span class="sample-value">확인 필요</span></div>`;
       }
 
-      microItems.forEach(m => {
-        if (m.n) {
-          html += `<div class="sample-row"><span class="sample-label">미생물 (${escapeHtml(m.name)})</span><span class="sample-value">${MICRO_UNIT_G}g × ${m.n}개</span></div>`;
-        } else {
-          html += `<div class="sample-row"><span class="sample-label">미생물 (${escapeHtml(m.name)})</span><span class="sample-value">개수 확인 필요</span></div>`;
-        }
-      });
+      const nKeys = Object.keys(microByN);
+      if (nKeys.length > 0) {
+        nKeys.forEach(n => {
+          const names = microByN[n];
+          html += `<div class="sample-row"><span class="sample-label">미생물 세트</span><span class="sample-value">n=${n} → ${n}개 세트</span></div>`;
+          html += `<div class="sample-detail">이 세트 하나로 함께 검사: ${names.map(escapeHtml).join(', ')}</div>`;
+        });
+        html += `<div class="micro-explain">
+          같은 세트에서 여러 미생물 항목을 동시에 검사하므로 <b>항목 수만큼 세트를 늘릴 필요는 없습니다.</b>
+          완제품 단위가 넉넉하면(예: 도시락 500g) 제품을 <b>그대로 n개</b> 준비하면 되고,
+          소분해서 담을 경우 세트당 최소 ${MICRO_UNIT_G}g 이상(항목이 많으면 여유있게 더) 담아주세요.
+        </div>`;
+      }
+      if (microUnknownNames.length > 0) {
+        html += `<div class="sample-row"><span class="sample-label">미생물 (n값 미확인)</span><span class="sample-value">${microUnknownNames.map(escapeHtml).join(', ')}</span></div>`;
+      }
 
-      if (physioG === 0 && !physioHasUnknown && microItems.length === 0) {
+      if (physioG === 0 && !physioHasUnknown && nKeys.length === 0 && microUnknownNames.length === 0) {
         html += '<div class="sample-row"><span class="sample-label">계량 시료 없음 (완제품 확인용 항목만 선택됨)</span></div>';
       }
 
