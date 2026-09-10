@@ -1,0 +1,9 @@
+{
+  "name": "시험분석 매뉴얼 검색",
+  "short_name": "시험분석매뉴얼",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F7F6F2",
+  "theme_color": "#0F5B4D",
+  "icons": []
+}
