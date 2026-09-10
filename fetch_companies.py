@@ -35,9 +35,9 @@ def call_api(region, page_no, num_of_rows=100):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
 
     last_err = None
-    for attempt in range(1, 4):  # 최대 3회 재시도
+    for attempt in range(1, 6):  # 최대 5회 재시도
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=60) as resp:
                 raw = resp.read().decode("utf-8")
             return json.loads(raw)
         except urllib.error.HTTPError as e:
@@ -46,8 +46,8 @@ def call_api(region, page_no, num_of_rows=100):
             raise
         except (urllib.error.URLError, TimeoutError) as e:
             last_err = e
-            wait = attempt * 3
-            print(f"[재시도 {attempt}/3] 네트워크 오류: {e} -> {wait}초 대기 후 재시도")
+            wait = attempt * 5
+            print(f"[재시도 {attempt}/5] 네트워크 오류: {e} -> {wait}초 대기 후 재시도")
             time.sleep(wait)
 
     raise last_err
@@ -126,6 +126,12 @@ def main():
             all_items.append(normalize(item))
 
     all_items.sort(key=lambda x: x["name"] or "")
+
+    # 전부 실패해서 이번 수집 결과가 0건이면, 기존 파일을 빈 값으로
+    # 덮어쓰지 않고 그대로 둔다 (다음 스케줄에 재시도됨).
+    if len(all_items) == 0 and os.path.exists("company-data.json"):
+        print("[중단] 이번 수집이 전부 실패해서 기존 company-data.json을 유지합니다.")
+        return
 
     output = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
