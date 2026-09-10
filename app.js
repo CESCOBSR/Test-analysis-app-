@@ -451,7 +451,7 @@
     const cardsHtml = shown.map(c => {
       const recent = isRecent(c.permit_date);
       const closed = (c.status || '').includes('폐업');
-      const fsUrl = 'https://www.google.com/search?q=' + encodeURIComponent(c.name + ' site:foodsafetykorea.go.kr');
+      const fsUrl = 'https://www.foodsafetykorea.go.kr/portal/specialinfo/searchInfoCompany.do?menu_no=2813&menu_grp=MENU_NEW04';
       return `
         <div class="lead-card">
           <div class="lead-top">
@@ -463,7 +463,10 @@
           <div class="lead-meta">
             <span>인허가 ${fmtDate(c.permit_date)}</span>
             ${c.tel ? `<a href="tel:${escapeHtml(c.tel)}">${escapeHtml(c.tel)}</a>` : ''}
-            <a href="${fsUrl}" target="_blank" rel="noopener">품목·HACCP 확인 ↗</a>
+          </div>
+          <div class="lead-fs-row">
+            <button class="copy-name-btn" data-name="${escapeHtml(c.name || '')}">업체명 복사</button>
+            <a href="${fsUrl}" target="_blank" rel="noopener">식품안전나라 업체검색 열기 ↗</a>
           </div>
         </div>
       `;
@@ -493,5 +496,36 @@
         renderLeads();
       });
     }
+
+    const copyBtns = Array.prototype.slice.call(leadsArea.querySelectorAll('.copy-name-btn'));
+    copyBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.dataset.name;
+        copyToClipboard(name);
+        const original = btn.textContent;
+        btn.textContent = '복사됨 ✓';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+      });
+    });
+  }
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+    } else {
+      fallbackCopy(text);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
   }
 })();
