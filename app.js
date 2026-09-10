@@ -221,6 +221,10 @@
         <div class="result-meta">${escapeHtml(catLabel)}</div>
       </div>
       <div class="quote-hint">체크 해제하면 견적/시료량에서 제외됩니다</div>
+      <div class="select-all-row">
+        <button class="select-all-btn" id="selectAllBtn">전체 선택</button>
+        <button class="select-all-btn" id="deselectAllBtn">전체 해제</button>
+      </div>
       ${cardsHtml}
       ${summaryHtml}
       <div class="guide-note">
@@ -291,6 +295,16 @@
 
     checkboxes.forEach(cb => cb.addEventListener('change', recalc));
     bufferToggle.addEventListener('change', recalc);
+
+    document.getElementById('selectAllBtn').addEventListener('click', () => {
+      checkboxes.forEach(cb => { cb.checked = true; });
+      recalc();
+    });
+    document.getElementById('deselectAllBtn').addEventListener('click', () => {
+      checkboxes.forEach(cb => { cb.checked = false; });
+      recalc();
+    });
+
     recalc();
   }
 
