@@ -139,11 +139,9 @@
     let feeSum = 0;
     let feeSumHasUnknown = false;
 
-    const cardsHtml = list.map(it => {
+    const cardsHtml = list.map((it, idx) => {
       const gram = fmtGram(it);
       const feeVat = it.fee_vat;
-      if (feeVat === null || feeVat === undefined) feeSumHasUnknown = true;
-      else feeSum += feeVat;
 
       const specsHtml = it.specs && it.specs.length
         ? it.specs.map(s => escapeHtml(s)).join(' / ')
@@ -160,7 +158,10 @@
       return `
         <div class="card">
           <div class="card-top">
-            <span class="card-item-name">${escapeHtml(it.item)}</span>
+            <label class="card-check">
+              <input type="checkbox" class="quote-check" data-idx="${idx}" data-fee="${feeVat === null || feeVat === undefined ? '' : feeVat}" checked>
+              <span class="card-item-name">${escapeHtml(it.item)}</span>
+            </label>
             <span class="card-fee">${fmtWon(feeVat)}</span>
           </div>
           <div class="card-sub">
@@ -173,10 +174,16 @@
       `;
     }).join('');
 
+    // 초기값: 전체 선택된 상태의 합계
+    list.forEach(it => {
+      if (it.fee_vat === null || it.fee_vat === undefined) feeSumHasUnknown = true;
+      else feeSum += it.fee_vat;
+    });
+
     const summaryHtml = `
       <div class="summary-bar">
-        <span>항목 ${list.length}개 합계 (VAT포함)</span>
-        <span class="total">${fmtWon(feeSum)}${feeSumHasUnknown ? '+' : ''}</span>
+        <span id="summaryLabel">항목 ${list.length}개 선택 (VAT포함)</span>
+        <span class="total" id="summaryTotal">${fmtWon(feeSum)}${feeSumHasUnknown ? '+' : ''}</span>
       </div>
     `;
 
@@ -188,6 +195,7 @@
         </div>
         <div class="result-meta">${escapeHtml(catLabel)}</div>
       </div>
+      <div class="quote-hint">체크 해제하면 견적에서 제외됩니다</div>
       ${cardsHtml}
       ${summaryHtml}
       <div class="guide-note">
@@ -195,6 +203,27 @@
         시료량 미표시 항목(미생물·중금속 등)은 완제품 단위로 별도 수거 기준이 적용됩니다.
       </div>
     `;
+
+    const checkboxes = Array.prototype.slice.call(resultArea.querySelectorAll('.quote-check'));
+    const summaryLabel = document.getElementById('summaryLabel');
+    const summaryTotal = document.getElementById('summaryTotal');
+
+    function recalcQuote() {
+      let sum = 0;
+      let hasUnknown = false;
+      let checkedCount = 0;
+      checkboxes.forEach(cb => {
+        if (!cb.checked) return;
+        checkedCount++;
+        const feeStr = cb.dataset.fee;
+        if (feeStr === '') hasUnknown = true;
+        else sum += parseFloat(feeStr);
+      });
+      summaryLabel.textContent = `항목 ${checkedCount}개 선택 (VAT포함)`;
+      summaryTotal.textContent = fmtWon(sum) + (hasUnknown ? '+' : '');
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', recalcQuote));
   }
 
   // Enter key selects top suggestion
@@ -340,6 +369,7 @@
     const cardsHtml = shown.map(c => {
       const recent = isRecent(c.permit_date);
       const closed = (c.status || '').includes('폐업');
+      const fsUrl = 'https://www.google.com/search?q=' + encodeURIComponent(c.name + ' site:foodsafetykorea.go.kr');
       return `
         <div class="lead-card">
           <div class="lead-top">
@@ -351,6 +381,7 @@
           <div class="lead-meta">
             <span>인허가 ${fmtDate(c.permit_date)}</span>
             ${c.tel ? `<a href="tel:${escapeHtml(c.tel)}">${escapeHtml(c.tel)}</a>` : ''}
+            <a href="${fsUrl}" target="_blank" rel="noopener">품목·HACCP 확인 ↗</a>
           </div>
         </div>
       `;
