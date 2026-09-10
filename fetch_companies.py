@@ -33,14 +33,24 @@ def call_api(region, page_no, num_of_rows=100):
     url = f"{BASE_URL}?serviceKey={SERVICE_KEY}&{query}"
 
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            raw = resp.read().decode("utf-8")
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        print(f"[HTTP {e.code}] 응답 본문:\n{body[:1000]}")
-        raise
-    return json.loads(raw)
+
+    last_err = None
+    for attempt in range(1, 4):  # 최대 3회 재시도
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                raw = resp.read().decode("utf-8")
+            return json.loads(raw)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            print(f"[HTTP {e.code}] 응답 본문:\n{body[:1000]}")
+            raise
+        except (urllib.error.URLError, TimeoutError) as e:
+            last_err = e
+            wait = attempt * 3
+            print(f"[재시도 {attempt}/3] 네트워크 오류: {e} -> {wait}초 대기 후 재시도")
+            time.sleep(wait)
+
+    raise last_err
 
 
 def fetch_region(region):
@@ -96,9 +106,16 @@ def normalize(item):
 def main():
     all_items = []
     seen_mgmt_no = set()
+    failed_regions = []
 
     for region in REGIONS:
-        raw_items = fetch_region(region)
+        try:
+            raw_items = fetch_region(region)
+        except Exception as e:
+            print(f"[실패] {region} 수집 중 오류로 건너뜀: {e}")
+            failed_regions.append(region)
+            continue
+
         for item in raw_items:
             if not is_active(item):
                 continue
@@ -113,6 +130,7 @@ def main():
     output = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "count": len(all_items),
+        "failed_regions": failed_regions,  # 수집 실패한 지역이 있으면 여기 표시됨
         "companies": all_items,
     }
 
