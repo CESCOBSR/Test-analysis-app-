@@ -238,6 +238,7 @@
     const summaryTotal = document.getElementById('summaryTotal');
     const sampleSummary = document.getElementById('sampleSummary');
     const bufferToggle = document.getElementById('bufferToggle');
+    const microWeights = {}; // n값 -> 입력된 중량(g), recalc 간에 유지
 
     function recalc() {
       let sum = 0, hasUnknown = false, checkedCount = 0;
@@ -289,13 +290,23 @@
       if (nKeys.length > 0) {
         nKeys.forEach(n => {
           const names = microByN[n];
-          html += `<div class="sample-row"><span class="sample-label">미생물 세트</span><span class="sample-value">n=${n} → ${n}개 세트</span></div>`;
-          html += `<div class="sample-detail">이 세트 하나로 함께 검사: ${names.map(escapeHtml).join(', ')}</div>`;
+          const namesWithG = names.map(nm => escapeHtml(nm) + `(${MICRO_UNIT_G}g↑)`).join(', ');
+          html += `<div class="sample-row"><span class="sample-label">미생물 세트 (n=${n})</span><span class="sample-value">${n}개 세트</span></div>`;
+          html += `<div class="sample-detail">함께 검사: ${namesWithG}</div>`;
+          html += `
+            <div class="weight-input-row">
+              <label>완제품 1개(또는 1회 채취량) 중량</label>
+              <div class="weight-input-wrap">
+                <input type="number" min="0" class="weight-input" data-n="${n}" placeholder="예: 500">
+                <span>g</span>
+              </div>
+            </div>
+            <div class="weight-result" id="weightResult-${n}"></div>
+          `;
         });
         html += `<div class="micro-explain">
           같은 세트에서 여러 미생물 항목을 동시에 검사하므로 <b>항목 수만큼 세트를 늘릴 필요는 없습니다.</b>
-          완제품 단위가 넉넉하면(예: 도시락 500g) 제품을 <b>그대로 n개</b> 준비하면 되고,
-          소분해서 담을 경우 세트당 최소 ${MICRO_UNIT_G}g 이상(항목이 많으면 여유있게 더) 담아주세요.
+          위에 완제품 1개(또는 소분 채취량)의 중량을 입력하시면 몇 개를 준비하면 되는지 계산해드립니다.
         </div>`;
       }
       if (microUnknownNames.length > 0) {
@@ -307,6 +318,35 @@
       }
 
       sampleSummary.innerHTML = html;
+
+      const weightInputs = Array.prototype.slice.call(sampleSummary.querySelectorAll('.weight-input'));
+      weightInputs.forEach(inp => {
+        const n = inp.dataset.n;
+        if (microWeights[n] !== undefined) {
+          inp.value = microWeights[n];
+        }
+        function updateResult() {
+          const nVal = parseInt(inp.dataset.n, 10);
+          const w = parseFloat(inp.value);
+          const resultEl = document.getElementById('weightResult-' + n);
+          if (!w || w <= 0) {
+            delete microWeights[n];
+            resultEl.innerHTML = '';
+            return;
+          }
+          microWeights[n] = inp.value;
+          if (w >= MICRO_UNIT_G) {
+            resultEl.innerHTML = `<span class="ok">✓ 이 중량이면 완제품(또는 채취분) 그대로 <b>${nVal}개</b> 준비하시면 충분합니다.</span>`;
+          } else {
+            const perSet = Math.ceil(MICRO_UNIT_G / w);
+            const total = perSet * nVal;
+            resultEl.innerHTML = `<span class="warn">⚠ 1개(${w}g)는 최소 ${MICRO_UNIT_G}g에 못 미칩니다.<br>
+              세트당 <b>${perSet}개씩 묶어서</b> 총 <b>${total}개</b>(${nVal}세트 × ${perSet}개)를 준비해주세요.</span>`;
+          }
+        }
+        inp.addEventListener('input', updateResult);
+        if (microWeights[n] !== undefined) updateResult();
+      });
     }
 
     checkboxes.forEach(cb => cb.addEventListener('change', recalc));
