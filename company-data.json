@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-10T06:08:54",
- "count": 4027,
+ "generated_at": "2026-09-11T22:58:22",
+ "count": 4026,
  "failed_regions": [],
  "companies": [
   {
@@ -2756,19 +2756,6 @@
    "tel": "055-781-1115",
    "homepage": "",
    "mgmt_no": "5380000-106-2000-00020",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
-   "name": "(주)바이올푸드2공장",
-   "address": "경상남도 양산시 산막공단남12길 142 (북정동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2020-04-14",
-   "closed_date": "",
-   "tel": "055-381-8900",
-   "homepage": "",
-   "mgmt_no": "5380000-106-2020-00007",
    "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
@@ -7687,6 +7674,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "(주)풍조푸드",
+   "address": "부산광역시 해운대구 재반로84번길 84-1, 2층 1호 (재송동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-10",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3330000-106-2026-00010",
+   "updated_at": "2026-09-11 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "(주)풍한식품",
    "address": "경상남도 김해시 진영읍 본산로 49-43",
    "status": "영업/정상",
@@ -8073,7 +8073,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5350000-106-2017-00004",
-   "updated_at": "2026-05-06 22:00:25",
+   "updated_at": "2026-09-10 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -23166,7 +23166,7 @@
    "tel": "055-964-1279",
    "homepage": "",
    "mgmt_no": "5460000-106-2020-00006",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-09-11 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -30433,7 +30433,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3290000-106-2014-00019",
-   "updated_at": "2026-05-11 22:37:41",
+   "updated_at": "2026-09-11 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -33241,7 +33241,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5380000-106-2019-00010",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-09-11 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -38484,6 +38484,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "주식회사 더굿",
+   "address": "경상남도 양산시 산막공단남12길 142 (북정동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2020-04-14",
+   "closed_date": "",
+   "tel": "055-785-0880",
+   "homepage": "",
+   "mgmt_no": "5380000-106-2020-00007",
+   "updated_at": "2026-09-11 21:45:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "주식회사 더그릿",
    "address": "부산광역시 기장군 정관읍 용수공단1길 17, 지하1층",
    "status": "영업/정상",
@@ -39027,6 +39040,19 @@
    "homepage": "",
    "mgmt_no": "5340000-106-2024-00007",
    "updated_at": "2026-05-10 22:05:47",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 미담누들",
+   "address": "울산광역시 울주군 웅촌면 은현공단3길 3, 1,2층",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2015-07-27",
+   "closed_date": "",
+   "tel": "055-902-0060",
+   "homepage": "",
+   "mgmt_no": "3730000-106-2015-00014",
+   "updated_at": "2026-09-11 22:45:00",
    "is_existing_customer": null
   },
   {
@@ -41744,19 +41770,6 @@
    "homepage": "",
    "mgmt_no": "5670156-106-2018-00010",
    "updated_at": "2026-05-10 22:09:43",
-   "is_existing_customer": null
-  },
-  {
-   "name": "주식회사미담",
-   "address": "경상남도 김해시 한림면 장재로 141",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2015-07-27",
-   "closed_date": "",
-   "tel": "055-902-0060",
-   "homepage": "",
-   "mgmt_no": "5350000-106-2015-00011",
-   "updated_at": "2026-05-06 22:00:25",
    "is_existing_customer": null
   },
   {
@@ -46986,19 +46999,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "통영블루스",
-   "address": "경상남도 통영시 새미골5길 8, 2층 (도천동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2024-05-09",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5330000-106-2024-00005",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "통영선미식품",
    "address": "경상남도 통영시 도산면 도산일주로 2133-6",
    "status": "영업/정상",
@@ -47269,19 +47269,6 @@
    "homepage": "",
    "mgmt_no": "5350000-106-2012-00029",
    "updated_at": "2026-05-06 22:00:22",
-   "is_existing_customer": null
-  },
-  {
-   "name": "파이텍",
-   "address": "경상남도 창원시 마산합포구 3·15대로 187, 1층 (중앙동2가)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2023-10-30",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5670156-106-2023-00002",
-   "updated_at": "2026-05-10 22:09:43",
    "is_existing_customer": null
   },
   {
