@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-11T22:58:22",
- "count": 4026,
+ "generated_at": "2026-09-13T22:51:01",
+ "count": 4027,
  "failed_regions": [],
  "companies": [
   {
@@ -35426,6 +35426,19 @@
    "homepage": "",
    "mgmt_no": "3290000-106-2003-00018",
    "updated_at": "2026-05-11 22:37:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "이그니스커피",
+   "address": "경상남도 양산시 상북면 소토2길 28, 1층 일부호",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-11",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5380000-106-2026-00010",
+   "updated_at": "2026-09-12 21:45:00",
    "is_existing_customer": null
   },
   {
