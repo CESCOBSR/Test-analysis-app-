@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-17T23:22:36",
- "count": 4028,
+ "generated_at": "2026-09-19T22:39:13",
+ "count": 4032,
  "failed_regions": [],
  "companies": [
   {
@@ -5902,7 +5902,7 @@
    "tel": "051-518-3427",
    "homepage": "",
    "mgmt_no": "3350000-106-2012-00004",
-   "updated_at": "2026-05-04 22:35:49",
+   "updated_at": "2026-09-19 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -16293,6 +16293,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "다인플러스",
+   "address": "경상남도 창원시 진해구 명동로 95, 1층 일부(우측)호 (명동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-18",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5670206-106-2026-00003",
+   "updated_at": "2026-09-19 21:45:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "다자연식품",
    "address": "울산광역시 남구 번영로 62, 1층 (야음동)",
    "status": "영업/정상",
@@ -23153,7 +23166,7 @@
    "tel": "051-463-1015",
    "homepage": "",
    "mgmt_no": "3270000-106-2004-00004",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-09-19 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -26144,6 +26157,19 @@
    "homepage": "",
    "mgmt_no": "5340000-106-2012-00006",
    "updated_at": "2026-05-10 22:05:44",
+   "is_existing_customer": null
+  },
+  {
+   "name": "삼천포수산물 주식회사",
+   "address": "경상남도 사천시 청송길 64-60 (향촌동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-18",
+   "closed_date": "",
+   "tel": "055-833-7200",
+   "homepage": "",
+   "mgmt_no": "5340000-106-2026-00007",
+   "updated_at": "2026-09-19 21:45:40",
    "is_existing_customer": null
   },
   {
@@ -32673,6 +32699,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "영어조합법인오늘",
+   "address": "경상남도 통영시 도산면 도산일주로 2119",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2023-09-14",
+   "closed_date": "",
+   "tel": "055-646-2260",
+   "homepage": "",
+   "mgmt_no": "5330000-106-2023-00004",
+   "updated_at": "2026-09-19 21:45:21",
+   "is_existing_customer": null
+  },
+  {
    "name": "영주식품",
    "address": "경상남도 창녕군 계성면 영산계성로 326",
    "status": "영업/정상",
@@ -33450,6 +33489,19 @@
    "homepage": "",
    "mgmt_no": "5380000-106-2026-00005",
    "updated_at": "2026-05-30 21:45:00",
+   "is_existing_customer": null
+  },
+  {
+   "name": "온다푸드시스템",
+   "address": "부산광역시 사상구 사상로356번길 41-14, 1~2층 (덕포동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-16",
+   "closed_date": "",
+   "tel": "1668-5596",
+   "homepage": "",
+   "mgmt_no": "3390000-106-2026-00006",
+   "updated_at": "2026-09-18 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -35009,7 +35061,7 @@
    "tel": "055-356-2768",
    "homepage": "",
    "mgmt_no": "5360000-106-2018-00011",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-09-19 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -36453,6 +36505,19 @@
    "homepage": "",
    "mgmt_no": "5460000-106-2004-00001",
    "updated_at": "2025-12-15 16:15:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "장생참맛식품",
+   "address": "경상남도 창원시 진해구 용원동로 275-1, 1층 (용원동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-18",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5670206-106-2026-00004",
+   "updated_at": "2026-09-19 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -39000,7 +39065,7 @@
    "tel": "052-252-0222",
    "homepage": "",
    "mgmt_no": "3710000-106-2023-00001",
-   "updated_at": "2026-05-11 22:45:19",
+   "updated_at": "2026-09-19 22:45:00",
    "is_existing_customer": null
   },
   {
@@ -42055,19 +42120,6 @@
    "tel": "055-883-2746",
    "homepage": "",
    "mgmt_no": "5440000-106-2000-00012",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
-   "name": "죽방렴영어조합법인",
-   "address": "경상남도 통영시 도산면 도산일주로 2119",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2023-09-14",
-   "closed_date": "",
-   "tel": "055-646-2260",
-   "homepage": "",
-   "mgmt_no": "5330000-106-2023-00004",
    "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
