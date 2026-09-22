@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21T23:51:07",
+ "generated_at": "2026-09-22T23:29:06",
  "count": 4032,
  "failed_regions": [],
  "companies": [
@@ -14430,7 +14430,7 @@
    "tel": "055-964-1454",
    "homepage": "",
    "mgmt_no": "5460000-106-2008-00006",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-09-22 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -23258,6 +23258,19 @@
    "homepage": "",
    "mgmt_no": "3290000-106-2020-00003",
    "updated_at": "2026-05-11 22:37:46",
+   "is_existing_customer": null
+  },
+  {
+   "name": "버터리앙",
+   "address": "경상남도 김해시 칠산로237번길 6-10, 1층 (화목동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2020-08-18",
+   "closed_date": "",
+   "tel": "055-902-3372",
+   "homepage": "",
+   "mgmt_no": "5350000-106-2020-00013",
+   "updated_at": "2026-09-22 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -36881,7 +36894,7 @@
    "tel": "051-714-1008",
    "homepage": "",
    "mgmt_no": "3390000-106-2024-00006",
-   "updated_at": "2026-05-08 22:31:54",
+   "updated_at": "2026-09-22 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -41487,19 +41500,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "주식회사 해든도우",
-   "address": "경상남도 김해시 칠산로237번길 6-10, 1층 (화목동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2020-08-18",
-   "closed_date": "",
-   "tel": "055-902-3372",
-   "homepage": "",
-   "mgmt_no": "5350000-106-2020-00013",
-   "updated_at": "2026-06-27 03:03:03",
-   "is_existing_customer": null
-  },
-  {
    "name": "주식회사 해복",
    "address": "부산광역시 사하구 다대로320번길 18 (장림동)",
    "status": "영업/정상",
@@ -44993,7 +44993,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5670206-106-2022-00005",
-   "updated_at": "2026-05-10 22:09:47",
+   "updated_at": "2026-09-22 21:45:00",
    "is_existing_customer": null
   },
   {
