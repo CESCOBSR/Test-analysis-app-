@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-23T23:27:20",
- "count": 4032,
+ "generated_at": "2026-09-24T23:45:48",
+ "count": 4034,
  "failed_regions": [],
  "companies": [
   {
@@ -34533,6 +34533,19 @@
   },
   {
    "name": "원일식품",
+   "address": "부산광역시 강서구 울만로25번길 81, 제2동 1층일부 (대저2동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-23",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3360000-106-2026-00010",
+   "updated_at": "2026-09-24 22:15:00",
+   "is_existing_customer": null
+  },
+  {
+   "name": "원일식품",
    "address": "부산광역시 금정구 동부곡로 4 (부곡동)",
    "status": "영업/정상",
    "detail_status": "영업",
@@ -38520,6 +38533,19 @@
    "homepage": "",
    "mgmt_no": "5340000-106-1981-00001",
    "updated_at": "2026-05-10 22:05:38",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 대동강축산",
+   "address": "경상남도 거제시 거제면 동상명진길 91, 제1동 1층 일부호",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-23",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5370000-106-2026-00008",
+   "updated_at": "2026-09-24 21:45:00",
    "is_existing_customer": null
   },
   {
