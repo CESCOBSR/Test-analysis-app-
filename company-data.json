@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-29T00:49:35",
- "count": 4034,
+ "generated_at": "2026-09-30T00:05:08",
+ "count": 4035,
  "failed_regions": [],
  "companies": [
   {
@@ -15536,6 +15536,19 @@
    "homepage": "",
    "mgmt_no": "3380000-106-2008-00006",
    "updated_at": "2026-05-11 22:34:43",
+   "is_existing_customer": null
+  },
+  {
+   "name": "누룩공방미미",
+   "address": "경상남도 창원시 성산구 원이대로 320, 시티세븐 G동 142호 (대원동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-09-28",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5670140-106-2026-00003",
+   "updated_at": "2026-09-29 21:45:00",
    "is_existing_customer": null
   },
   {
