@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-02T00:31:59",
- "count": 4035,
+ "generated_at": "2026-10-03T00:11:12",
+ "count": 4034,
  "failed_regions": [],
  "companies": [
   {
@@ -3809,7 +3809,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5670206-106-2026-00001",
-   "updated_at": "2026-06-27 21:45:00",
+   "updated_at": "2026-10-02 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -39313,19 +39313,6 @@
    "homepage": "",
    "mgmt_no": "3390000-106-2018-00013",
    "updated_at": "2026-05-08 22:31:52",
-   "is_existing_customer": null
-  },
-  {
-   "name": "주식회사 별고기",
-   "address": "부산광역시 기장군 장안읍 기장대로 1529, 1층",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2024-11-27",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "3400000-106-2024-00019",
-   "updated_at": "2026-05-06 22:36:48",
    "is_existing_customer": null
   },
   {
