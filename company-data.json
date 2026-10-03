@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T00:11:12",
+ "generated_at": "2026-10-03T23:31:15",
  "count": 4034,
  "failed_regions": [],
  "companies": [
@@ -33337,7 +33337,7 @@
   },
   {
    "name": "오양식품 주식회사",
-   "address": "부산광역시 기장군 장안읍 반룡산단1로 20",
+   "address": "부산광역시 기장군 장안읍 반룡산단3로 74, A동 1층",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "1993-06-09",
@@ -33345,7 +33345,7 @@
    "tel": "051-325-3318",
    "homepage": "",
    "mgmt_no": "3400000-106-1975-00001",
-   "updated_at": "2026-05-06 22:36:29",
+   "updated_at": "2026-10-03 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -37431,19 +37431,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "제이케이원",
-   "address": "경상남도 김해시 상동면 소락로 214",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2005-05-18",
-   "closed_date": "",
-   "tel": "055-333-9662",
-   "homepage": "",
-   "mgmt_no": "5350000-106-2005-00010",
-   "updated_at": "2026-05-06 22:00:20",
-   "is_existing_customer": null
-  },
-  {
    "name": "제이콥로스팅팩토리",
    "address": "부산광역시 기장군 일광읍 문오성길 765, 1층",
    "status": "영업/정상",
@@ -39109,7 +39096,7 @@
   },
   {
    "name": "주식회사 명진푸드",
-   "address": "울산광역시 동구 꽃바위3길 14, 지하1층 (방어동)",
+   "address": "울산광역시 동구 꽃바위3길 14, 1층 (방어동)",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2023-10-20",
@@ -39117,7 +39104,7 @@
    "tel": "052-252-0222",
    "homepage": "",
    "mgmt_no": "3710000-106-2023-00001",
-   "updated_at": "2026-09-19 22:45:00",
+   "updated_at": "2026-10-03 22:45:00",
    "is_existing_customer": null
   },
   {
@@ -40769,6 +40756,19 @@
    "homepage": "",
    "mgmt_no": "5350000-106-2023-00008",
    "updated_at": "2026-05-06 22:00:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 제이케이원",
+   "address": "경상남도 김해시 상동면 소락로 214",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2005-05-18",
+   "closed_date": "",
+   "tel": "055-333-9662",
+   "homepage": "",
+   "mgmt_no": "5350000-106-2005-00010",
+   "updated_at": "2026-10-03 21:45:00",
    "is_existing_customer": null
   },
   {
