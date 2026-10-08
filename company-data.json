@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-07T00:22:26",
- "count": 4034,
+ "generated_at": "2026-10-08T00:44:39",
+ "count": 4035,
  "failed_regions": [],
  "companies": [
   {
@@ -1001,7 +1001,7 @@
    "tel": "051-329-4100",
    "homepage": "",
    "mgmt_no": "3360000-106-2007-00001",
-   "updated_at": "2026-05-09 22:38:43",
+   "updated_at": "2026-10-07 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -7878,7 +7878,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5310000-106-2014-00013",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-07 21:45:02",
    "is_existing_customer": null
   },
   {
@@ -13755,6 +13755,19 @@
    "homepage": "",
    "mgmt_no": "5340000-106-2026-00005",
    "updated_at": "2026-07-04 21:45:32",
+   "is_existing_customer": null
+  },
+  {
+   "name": "농업회사법인 잼있는농부생활 주식회사",
+   "address": "경상남도 진주시 평거로140번길 8, 1층 (신안동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-01",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5310000-106-2026-00009",
+   "updated_at": "2026-10-07 21:45:02",
    "is_existing_customer": null
   },
   {
@@ -26667,6 +26680,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "서연푸드",
+   "address": "부산광역시 동구 중앙대로179번길 9, 5층 501호 (초량동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2022-09-05",
+   "closed_date": "",
+   "tel": "051-469-0177",
+   "homepage": "",
+   "mgmt_no": "3270000-106-2022-00002",
+   "updated_at": "2026-10-07 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "서울우유협동조합거창공장",
    "address": "경상남도 거창군 거창읍 거함대로 3372-71",
    "status": "영업/정상",
@@ -29173,19 +29199,6 @@
    "homepage": "",
    "mgmt_no": "5670123-106-2022-00003",
    "updated_at": "2026-05-10 22:09:31",
-   "is_existing_customer": null
-  },
-  {
-   "name": "신발원푸드",
-   "address": "부산광역시 동구 중앙대로179번길 9, 5층 501호 (초량동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2022-09-05",
-   "closed_date": "",
-   "tel": "051-469-0177",
-   "homepage": "",
-   "mgmt_no": "3270000-106-2022-00002",
-   "updated_at": "2026-09-02 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -37233,6 +37246,19 @@
    "homepage": "",
    "mgmt_no": "3720000-106-2023-00005",
    "updated_at": "2026-05-11 22:45:24",
+   "is_existing_customer": null
+  },
+  {
+   "name": "제과마트코리아",
+   "address": "부산광역시 사하구 다송로72번길 82, 에스엔씨빌딩 202호 (다대동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2022-03-15",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3340000-106-2022-00003",
+   "updated_at": "2026-10-07 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -48182,19 +48208,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "핑거스제과",
-   "address": "부산광역시 사하구 다송로72번길 82, 에스엔씨빌딩 202호 (다대동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2022-03-15",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "3340000-106-2022-00003",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "하나로수산",
    "address": "경상남도 거제시 둔덕면 학산1길 30, 제3동 1층",
    "status": "영업/정상",
@@ -48338,7 +48351,7 @@
    "is_existing_customer": null
   },
   {
-   "name": "하니마루",
+   "name": "하니마루랩(LAB)",
    "address": "경상남도 진주시 범골로54번길 30-9, 드림IT밸리 주1동 B동 1103호 (충무공동)",
    "status": "영업/정상",
    "detail_status": "영업",
@@ -48347,7 +48360,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5310000-106-2025-00006",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-07 21:45:02",
    "is_existing_customer": null
   },
   {
