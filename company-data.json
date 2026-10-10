@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-08T00:44:39",
- "count": 4035,
+ "generated_at": "2026-10-10T00:29:38",
+ "count": 4038,
  "failed_regions": [],
  "companies": [
   {
@@ -34441,6 +34441,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "울산식품",
+   "address": "울산광역시 울주군 삼남읍 반구대로 788, 1층",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-08",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3730000-106-2026-00005",
+   "updated_at": "2026-10-09 22:45:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "울산식품유통",
    "address": "울산광역시 남구 팔등로51번길 29 (신정동,번지)",
    "status": "영업/정상",
@@ -34763,6 +34776,19 @@
    "homepage": "",
    "mgmt_no": "3400000-106-2017-00008",
    "updated_at": "2026-05-06 22:36:43",
+   "is_existing_customer": null
+  },
+  {
+   "name": "웨일에프앤비",
+   "address": "부산광역시 부산진구 성지로83번길 12, 1층 (초읍동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-07",
+   "closed_date": "",
+   "tel": "070-8778-2369",
+   "homepage": "",
+   "mgmt_no": "3290000-106-2026-00008",
+   "updated_at": "2026-10-09 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -36414,6 +36440,19 @@
    "homepage": "",
    "mgmt_no": "3360000-106-2019-00012",
    "updated_at": "2026-05-09 22:38:55",
+   "is_existing_customer": null
+  },
+  {
+   "name": "자향",
+   "address": "부산광역시 사하구 장림번영로 71, 1동 1층 (장림동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-07",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3340000-106-2026-00008",
+   "updated_at": "2026-10-08 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -51038,7 +51077,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5420000-106-2023-00003",
-   "updated_at": "2026-07-22 21:45:00",
+   "updated_at": "2026-10-08 21:45:00",
    "is_existing_customer": null
   },
   {
