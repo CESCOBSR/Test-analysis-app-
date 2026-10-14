@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-14T00:07:07",
- "count": 4038,
+ "generated_at": "2026-10-14T23:39:56",
+ "count": 4040,
  "failed_regions": [],
  "companies": [
   {
@@ -664,19 +664,6 @@
    "homepage": "",
    "mgmt_no": "3390000-106-2010-00011",
    "updated_at": "2026-05-08 22:31:50",
-   "is_existing_customer": null
-  },
-  {
-   "name": "(주)그랜드파머",
-   "address": "경상남도 양산시 하북면 신평강변3길 17-6 (1층일부)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2017-07-07",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5380000-106-2017-00007",
-   "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
   {
@@ -9256,7 +9243,7 @@
    "tel": "1544-6975",
    "homepage": "",
    "mgmt_no": "5310000-106-2023-00003",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-14 21:45:02",
    "is_existing_customer": null
   },
   {
@@ -19517,6 +19504,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "라니네푸드",
+   "address": "부산광역시 기장군 장안읍 기장대로 1529",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-13",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3400000-106-2026-00018",
+   "updated_at": "2026-10-14 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "라루스",
    "address": "부산광역시 기장군 정관읍 정관4로 50-16, 1층",
    "status": "영업/정상",
@@ -24493,6 +24493,19 @@
    "homepage": "",
    "mgmt_no": "5390000-106-2017-00004",
    "updated_at": "2025-12-15 16:15:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "브라이언 커피웍스",
+   "address": "부산광역시 기장군 기장읍 기장해안로 108, 에이원오션시티 104호",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-13",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3400000-106-2026-00017",
+   "updated_at": "2026-10-14 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -32036,19 +32049,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "엘케이(LK)푸드",
-   "address": "부산광역시 사상구 냉정로 3-4, 1~2층 (주례동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2015-05-04",
-   "closed_date": "",
-   "tel": "051-631-0355",
-   "homepage": "",
-   "mgmt_no": "3390000-106-2015-00005",
-   "updated_at": "2026-05-08 22:31:51",
-   "is_existing_customer": null
-  },
-  {
    "name": "엠에스글로벌바이오 주식회사",
    "address": "부산광역시 기장군 일광읍 횡계길 7, 기업설비지원동 B103호 (해양생물산업육성센터)",
    "status": "영업/정상",
@@ -32305,7 +32305,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5450000-106-2023-00005",
-   "updated_at": "2026-05-02 22:00:17",
+   "updated_at": "2026-10-14 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -33085,7 +33085,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5340000-106-2022-00006",
-   "updated_at": "2026-05-10 22:05:47",
+   "updated_at": "2026-10-14 21:45:42",
    "is_existing_customer": null
   },
   {
@@ -34932,6 +34932,19 @@
    "homepage": "",
    "mgmt_no": "3350000-106-2017-00001",
    "updated_at": "2026-05-04 22:35:50",
+   "is_existing_customer": null
+  },
+  {
+   "name": "유나",
+   "address": "부산광역시 동래구 미남로 70, 1층 일부호 (사직동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-13",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3300000-106-2026-00004",
+   "updated_at": "2026-10-14 22:14:59",
    "is_existing_customer": null
   },
   {
@@ -37505,7 +37518,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3400000-106-2018-00003",
-   "updated_at": "2026-05-06 22:36:44",
+   "updated_at": "2026-10-14 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -39793,7 +39806,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3250000-106-2022-00001",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-14 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -40755,7 +40768,7 @@
    "tel": "055-862-8675",
    "homepage": "",
    "mgmt_no": "5430000-106-2007-00006",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-14 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -40990,6 +41003,19 @@
    "homepage": "",
    "mgmt_no": "3360000-106-2022-00006",
    "updated_at": "2026-05-09 22:38:56",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 천해",
+   "address": "울산광역시 중구 성안14길 70, 1~2층 (성안동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-13",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3690000-106-2026-00002",
+   "updated_at": "2026-10-14 22:45:01",
    "is_existing_customer": null
   },
   {
