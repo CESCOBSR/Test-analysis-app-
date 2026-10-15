@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-14T23:39:56",
- "count": 4040,
+ "generated_at": "2026-10-15T23:32:57",
+ "count": 4041,
  "failed_regions": [],
  "companies": [
   {
@@ -13746,7 +13746,7 @@
   },
   {
    "name": "농업회사법인 잼있는농부생활 주식회사",
-   "address": "경상남도 진주시 평거로140번길 8, 1층 (신안동)",
+   "address": "경상남도 진주시 평거로140번길 8-1, 1층 (신안동)",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2026-10-01",
@@ -13754,7 +13754,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5310000-106-2026-00009",
-   "updated_at": "2026-10-07 21:45:02",
+   "updated_at": "2026-10-15 21:45:02",
    "is_existing_customer": null
   },
   {
@@ -40925,6 +40925,19 @@
    "homepage": "",
    "mgmt_no": "3360000-106-2011-00009",
    "updated_at": "2026-05-09 22:38:47",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 진주교방음식문화연구소",
+   "address": "경상남도 진주시 금산면 금산로52번길 5, 1층",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-14",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5310000-106-2026-00010",
+   "updated_at": "2026-10-15 21:45:02",
    "is_existing_customer": null
   },
   {
