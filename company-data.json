@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-16T23:16:33",
- "count": 4041,
+ "generated_at": "2026-10-18T22:45:30",
+ "count": 4043,
  "failed_regions": [],
  "companies": [
   {
@@ -1820,7 +1820,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5670184-106-2026-00001",
-   "updated_at": "2026-07-25 21:45:00",
+   "updated_at": "2026-10-17 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -3294,7 +3294,7 @@
   },
   {
    "name": "(주)사랑채",
-   "address": "울산광역시 울주군 언양읍 서문5길 12-8, 1층",
+   "address": "울산광역시 울주군 청량읍 삼정로 92-3, 나동 215호",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2024-04-25",
@@ -3302,7 +3302,7 @@
    "tel": "052-286-0799",
    "homepage": "",
    "mgmt_no": "3730000-106-2024-00009",
-   "updated_at": "2026-05-06 22:45:37",
+   "updated_at": "2026-10-17 22:45:00",
    "is_existing_customer": null
   },
   {
@@ -23781,19 +23781,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "봉수맘마영농조합법인",
-   "address": "경상남도 의령군 봉수면 한지8길 14-4",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2009-06-30",
-   "closed_date": "",
-   "tel": "055-572-3114",
-   "homepage": "",
-   "mgmt_no": "5390000-106-2009-00003",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "봉평제분",
    "address": "부산광역시 강서구 대저로221번나길 22-13 (대저1동)",
    "status": "영업/정상",
@@ -29939,7 +29926,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3310000-106-2026-00004",
-   "updated_at": "2026-06-12 22:15:00",
+   "updated_at": "2026-10-18 22:15:01",
    "is_existing_customer": null
   },
   {
@@ -33193,6 +33180,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "오무거트",
+   "address": "부산광역시 기장군 기장읍 차성로344번길 47, 1층",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-15",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3400000-106-2026-00019",
+   "updated_at": "2026-10-16 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "오미식품",
    "address": "경상남도 김해시 김해대로2579번길 46, A동 1층 (안동)",
    "status": "영업/정상",
@@ -33648,6 +33648,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "올바른에프엔비",
+   "address": "부산광역시 기장군 정관읍 모전3길 34, 101호",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-16",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3400000-106-2026-00020",
+   "updated_at": "2026-10-17 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "올인식품",
    "address": "부산광역시 사하구 감천로139번가길 25-3, 1층 (감천동)",
    "status": "영업/정상",
@@ -33866,6 +33879,19 @@
    "homepage": "",
    "mgmt_no": "5340000-106-2016-00007",
    "updated_at": "2026-05-10 22:05:45",
+   "is_existing_customer": null
+  },
+  {
+   "name": "용호상회1976",
+   "address": "부산광역시 남구 수영로267번길 60, 지하1층 B101호(일부)호 (대연동, 동우빌리지)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-03-05",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3310000-106-2026-00002",
+   "updated_at": "2026-10-18 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -35807,7 +35833,7 @@
   },
   {
    "name": "이지쿡(주)",
-   "address": "부산광역시 기장군 장안읍 오리산단2로 51, 1층",
+   "address": "부산광역시 기장군 장안읍 오리산단2로 51, 1~2층",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2023-09-19",
@@ -35815,7 +35841,7 @@
    "tel": "051-995-9012",
    "homepage": "",
    "mgmt_no": "3400000-106-2023-00023",
-   "updated_at": "2026-05-06 22:36:48",
+   "updated_at": "2026-10-17 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -40291,6 +40317,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "주식회사 에이스원",
+   "address": "부산광역시 연제구 월드컵대로 21, 한원 메디칼 빌딩 8층 일부호 (연산동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-16",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3370000-106-2026-00003",
+   "updated_at": "2026-10-17 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "주식회사 에이앤제우스",
    "address": "부산광역시 사하구 하신중앙로3번길 105 (장림동)",
    "status": "영업/정상",
@@ -43108,7 +43147,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3310000-106-2026-00005",
-   "updated_at": "2026-08-07 22:15:00",
+   "updated_at": "2026-10-18 22:15:01",
    "is_existing_customer": null
   },
   {
@@ -46193,6 +46232,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "코어스탠다드",
+   "address": "부산광역시 해운대구 달맞이길117번나길 117, 1층 (중동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-16",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3330000-106-2026-00011",
+   "updated_at": "2026-10-17 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "코카콜라음료주식회사",
    "address": "경상남도 양산시 충렬로 269 (유산동)",
    "status": "영업/정상",
@@ -46792,19 +46844,6 @@
   },
   {
    "name": "태영식품",
-   "address": "부산광역시 사상구 모라로51번길 19 (모라동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "1998-11-19",
-   "closed_date": "",
-   "tel": "051-302-6633",
-   "homepage": "",
-   "mgmt_no": "3390000-106-1998-00901",
-   "updated_at": "2026-05-08 22:31:42",
-   "is_existing_customer": null
-  },
-  {
-   "name": "태영식품",
    "address": "부산광역시 금정구 개좌로 49-1 (금사동)",
    "status": "영업/정상",
    "detail_status": "영업",
@@ -47372,7 +47411,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3310000-106-2026-00003",
-   "updated_at": "2026-05-08 22:15:08",
+   "updated_at": "2026-10-18 22:15:01",
    "is_existing_customer": null
   },
   {
@@ -48698,7 +48737,7 @@
    "tel": "055-883-0534",
    "homepage": "",
    "mgmt_no": "5440000-106-2001-00009",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-16 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -50778,7 +50817,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5330000-106-2026-00007",
-   "updated_at": "2026-08-08 21:45:16",
+   "updated_at": "2026-10-17 21:45:24",
    "is_existing_customer": null
   },
   {
@@ -50831,19 +50870,6 @@
    "homepage": "",
    "mgmt_no": "3730000-106-2013-00009",
    "updated_at": "2026-05-06 22:45:31",
-   "is_existing_customer": null
-  },
-  {
-   "name": "햇맛식품",
-   "address": "부산광역시 부산진구 서면로 56 (부전동,외 1필지 서면시장 아20호)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2004-12-15",
-   "closed_date": "",
-   "tel": "051-806-6247",
-   "homepage": "",
-   "mgmt_no": "3290000-106-2004-00010",
-   "updated_at": "2026-05-11 22:37:29",
    "is_existing_customer": null
   },
   {
