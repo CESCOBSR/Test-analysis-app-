@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T00:06:33",
+ "generated_at": "2026-10-20T23:39:43",
  "count": 4043,
  "failed_regions": [],
  "companies": [
@@ -7225,10 +7225,10 @@
    "detail_status": "영업",
    "permit_date": "2026-01-19",
    "closed_date": "",
-   "tel": "",
+   "tel": "051-902-9466",
    "homepage": "",
    "mgmt_no": "3340000-106-2026-00001",
-   "updated_at": "2026-01-20 22:15:00",
+   "updated_at": "2026-10-20 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -25844,7 +25844,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5450000-106-2019-00004",
-   "updated_at": "2026-05-02 22:00:17",
+   "updated_at": "2026-10-20 21:45:00",
    "is_existing_customer": null
   },
   {
@@ -39868,10 +39868,10 @@
    "detail_status": "영업",
    "permit_date": "2014-12-12",
    "closed_date": "",
-   "tel": "051-702-3233",
+   "tel": "",
    "homepage": "",
    "mgmt_no": "3400000-106-2014-00021",
-   "updated_at": "2026-06-20 03:03:03",
+   "updated_at": "2026-10-20 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -42268,7 +42268,7 @@
   },
   {
    "name": "죽림감로식품",
-   "address": "경상남도 함양군 안의면 광풍로 86",
+   "address": "경상남도 함양군 안의면 광풍로 49",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2013-05-10",
@@ -42276,7 +42276,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5460000-106-2013-00003",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-20 21:45:00",
    "is_existing_customer": null
   },
   {
