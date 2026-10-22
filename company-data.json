@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-20T23:39:43",
- "count": 4043,
+ "generated_at": "2026-10-22T23:52:25",
+ "count": 4044,
  "failed_regions": [],
  "companies": [
   {
@@ -6383,7 +6383,7 @@
    "tel": "055-252-0472",
    "homepage": "",
    "mgmt_no": "5670123-106-1994-11001",
-   "updated_at": "2026-05-10 22:09:15",
+   "updated_at": "2026-10-22 21:44:59",
    "is_existing_customer": null
   },
   {
@@ -21753,19 +21753,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "무타블랑",
-   "address": "경상남도 양산시 상북면 수서로 164-10, 1층 일부",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2020-08-28",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5380000-106-2020-00013",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "묵제당",
    "address": "경상남도 하동군 악양면 신흥길 111-9",
    "status": "영업/정상",
@@ -23712,7 +23699,7 @@
    "tel": "051-728-5900",
    "homepage": "",
    "mgmt_no": "3400000-106-2014-00003",
-   "updated_at": "2026-05-06 22:36:40",
+   "updated_at": "2026-10-22 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -27729,7 +27716,7 @@
    "tel": "051-292-2484",
    "homepage": "",
    "mgmt_no": "3340000-106-2011-00006",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-22 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -30177,6 +30164,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "아뮤즈에프엔비 2공장",
+   "address": "부산광역시 해운대구 송정1로7번길 5, 1층 (송정동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-20",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3330000-106-2026-00012",
+   "updated_at": "2026-10-22 22:15:00",
+   "is_existing_customer": null
+  },
+  {
    "name": "아미코젠(주)",
    "address": "경상남도 진주시 문산읍 월아산로950번길 14-10 (번지 외1필지(1,2층))",
    "status": "영업/정상",
@@ -32176,6 +32176,19 @@
    "homepage": "",
    "mgmt_no": "5440000-106-2005-00001",
    "updated_at": "2025-12-15 16:15:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "연하루 로스트웍스(Yonharu Roast Works)",
+   "address": "경상남도 진주시 강남로 257, 1층 일부 (칠암동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-21",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5310000-106-2026-00011",
+   "updated_at": "2026-10-22 21:45:01",
    "is_existing_customer": null
   },
   {
@@ -36647,7 +36660,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5670206-106-2026-00004",
-   "updated_at": "2026-09-19 21:45:00",
+   "updated_at": "2026-10-22 21:44:59",
    "is_existing_customer": null
   },
   {
@@ -40079,7 +40092,7 @@
    "tel": "051-710-2348",
    "homepage": "",
    "mgmt_no": "3310000-106-2020-00002",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-22 22:15:00",
    "is_existing_customer": null
   },
   {
@@ -40950,7 +40963,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3360000-106-2025-00003",
-   "updated_at": "2026-05-23 03:03:03",
+   "updated_at": "2026-10-22 22:14:59",
    "is_existing_customer": null
   },
   {
