@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-22T23:52:25",
- "count": 4044,
+ "generated_at": "2026-10-23T23:46:37",
+ "count": 4043,
  "failed_regions": [],
  "companies": [
   {
@@ -832,19 +832,6 @@
    "tel": "055-352-4744",
    "homepage": "",
    "mgmt_no": "5360000-106-2018-00003",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
-   "name": "(주)꼬치나라",
-   "address": "부산광역시 남구 진남로 207, 지하1층 (문현동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2014-02-18",
-   "closed_date": "",
-   "tel": "070-8747-8998",
-   "homepage": "",
-   "mgmt_no": "3310000-106-2014-00002",
    "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
@@ -7540,7 +7527,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3340000-106-2018-00011",
-   "updated_at": "2026-06-16 03:03:03",
+   "updated_at": "2026-10-23 22:14:59",
    "is_existing_customer": null
   },
   {
@@ -10270,7 +10257,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3290000-106-2025-00001",
-   "updated_at": "2026-05-11 22:37:57",
+   "updated_at": "2026-10-23 22:14:59",
    "is_existing_customer": null
   },
   {
@@ -15470,7 +15457,7 @@
    "tel": "055-932-5706",
    "homepage": "",
    "mgmt_no": "5480000-106-2007-00007",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-23 21:44:59",
    "is_existing_customer": null
   },
   {
@@ -50050,7 +50037,7 @@
    "tel": "055-933-3866",
    "homepage": "",
    "mgmt_no": "5480000-106-2009-00008",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-23 21:44:59",
    "is_existing_customer": null
   },
   {
