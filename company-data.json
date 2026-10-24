@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T23:46:37",
+ "generated_at": "2026-10-24T22:53:05",
  "count": 4043,
  "failed_regions": [],
  "companies": [
@@ -10882,19 +10882,6 @@
    "homepage": "",
    "mgmt_no": "3400000-106-1990-00190",
    "updated_at": "2026-05-06 22:36:31",
-   "is_existing_customer": null
-  },
-  {
-   "name": "구황유니버스 농업회사법인 주식회사",
-   "address": "경상남도 하동군 하동읍 섬진강대로 2513-31",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2024-12-23",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5440000-106-2024-00008",
-   "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
   {
@@ -48777,6 +48764,19 @@
    "homepage": "",
    "mgmt_no": "5440000-106-2003-00015",
    "updated_at": "2025-12-15 16:15:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "하동주조 농업회사법인 주식회사",
+   "address": "경상남도 하동군 하동읍 섬진강대로 2513-31",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2024-12-23",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5440000-106-2024-00008",
+   "updated_at": "2026-10-24 21:44:58",
    "is_existing_customer": null
   },
   {
