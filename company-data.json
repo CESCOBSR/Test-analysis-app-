@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-27T00:13:50",
- "count": 4043,
+ "generated_at": "2026-10-28T00:15:50",
+ "count": 4040,
  "failed_regions": [],
  "companies": [
   {
@@ -4879,19 +4879,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "(주)에코맘글로벌농업회사법인",
-   "address": "경상남도 하동군 악양면 정서길 199-2",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2019-12-26",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5440000-106-2019-00013",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "(주)에코밀",
    "address": "경상남도 양산시 어실로 274, 제1동 1층 (어곡동)",
    "status": "영업/정상",
@@ -9052,19 +9039,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "가염식품",
-   "address": "경상남도 통영시 광도면 덕포로 377-1",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "1990-11-21",
-   "closed_date": "",
-   "tel": "055-641-6882",
-   "homepage": "",
-   "mgmt_no": "5330000-106-1990-00002",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "가온누리",
    "address": "경상남도 남해군 이동면 남해대로 2364-11",
    "status": "영업/정상",
@@ -10830,19 +10804,6 @@
    "homepage": "",
    "mgmt_no": "5350000-106-1998-00018",
    "updated_at": "2026-05-27 03:03:03",
-   "is_existing_customer": null
-  },
-  {
-   "name": "구포국수",
-   "address": "경상남도 합천군 가회면 황매산로 81",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "1989-10-06",
-   "closed_date": "",
-   "tel": "055-0931-9988",
-   "homepage": "",
-   "mgmt_no": "5480000-106-1989-00002",
-   "updated_at": "2026-06-19 03:03:03",
    "is_existing_customer": null
   },
   {
@@ -29502,7 +29463,7 @@
   },
   {
    "name": "신화식품",
-   "address": "경상남도 양산시 명곡로 319, 104호, 105호 (명곡동)",
+   "address": "경상남도 양산시 명곡로 319, 대학슈퍼 105호 (명곡동)",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2019-09-17",
@@ -29510,7 +29471,7 @@
    "tel": "055-374-6007",
    "homepage": "",
    "mgmt_no": "5380000-106-2019-00024",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-27 21:44:56",
    "is_existing_customer": null
   },
   {
@@ -29605,19 +29566,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "실크카스테라",
-   "address": "경상남도 진주시 문산읍 월아산로996번길 40",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2024-05-20",
-   "closed_date": "",
-   "tel": "032-888-2567",
-   "homepage": "",
-   "mgmt_no": "5310000-106-2024-00010",
-   "updated_at": "2026-09-30 21:45:02",
-   "is_existing_customer": null
-  },
-  {
    "name": "실크테라 2공장",
    "address": "경상남도 진주시 문산읍 월아산로996번길 25, 1층 일부",
    "status": "영업/정상",
@@ -29628,6 +29576,19 @@
    "homepage": "",
    "mgmt_no": "5310000-106-2025-00010",
    "updated_at": "2025-12-15 16:15:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "실크테라 문산본점",
+   "address": "경상남도 진주시 문산읍 월아산로996번길 40",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2024-05-20",
+   "closed_date": "",
+   "tel": "055-763-3988",
+   "homepage": "",
+   "mgmt_no": "5310000-106-2024-00010",
+   "updated_at": "2026-10-27 21:44:59",
    "is_existing_customer": null
   },
   {
@@ -41097,7 +41058,7 @@
    "is_existing_customer": null
   },
   {
-   "name": "주식회사 컴포즈커피 스마트 팩토리",
+   "name": "주식회사 컴포즈커피",
    "address": "부산광역시 기장군 장안읍 오리산단7로 4",
    "status": "영업/정상",
    "detail_status": "영업",
@@ -41106,7 +41067,7 @@
    "tel": "070-8801-0602",
    "homepage": "",
    "mgmt_no": "3400000-106-2021-00020",
-   "updated_at": "2026-05-23 03:03:03",
+   "updated_at": "2026-10-27 22:14:57",
    "is_existing_customer": null
   },
   {
@@ -42120,7 +42081,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3350000-106-2022-00010",
-   "updated_at": "2026-05-04 22:35:51",
+   "updated_at": "2026-10-27 22:14:56",
    "is_existing_customer": null
   },
   {
