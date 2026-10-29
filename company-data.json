@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-28T00:15:50",
- "count": 4040,
+ "generated_at": "2026-10-29T00:37:56",
+ "count": 4042,
  "failed_regions": [],
  "companies": [
   {
@@ -7163,7 +7163,7 @@
    "tel": "051-727-0237",
    "homepage": "",
    "mgmt_no": "3400000-106-2023-00016",
-   "updated_at": "2026-05-06 22:36:47",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
@@ -8281,7 +8281,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5400000-106-2026-00001",
-   "updated_at": "2026-05-08 21:45:09",
+   "updated_at": "2026-10-28 21:44:56",
    "is_existing_customer": null
   },
   {
@@ -10231,7 +10231,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3290000-106-2025-00001",
-   "updated_at": "2026-10-23 22:14:59",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
@@ -19058,7 +19058,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3400000-106-2019-00021",
-   "updated_at": "2026-09-04 22:15:00",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
@@ -20826,7 +20826,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3400000-106-2024-00003",
-   "updated_at": "2026-05-06 22:36:48",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
@@ -22490,7 +22490,7 @@
    "tel": "051-723-6545",
    "homepage": "",
    "mgmt_no": "3400000-106-2005-00004",
-   "updated_at": "2026-06-02 03:03:03",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
@@ -36040,6 +36040,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "일등식품",
+   "address": "경상남도 거제시 사등면 지석로 224, 1동 1층",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-27",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5370000-106-2026-00009",
+   "updated_at": "2026-10-28 21:44:56",
+   "is_existing_customer": null
+  },
+  {
    "name": "일랑(YLANG)",
    "address": "경상남도 통영시 도산면 법송5길 74",
    "status": "영업/정상",
@@ -39456,6 +39469,19 @@
    "homepage": "",
    "mgmt_no": "3290000-106-2016-00014",
    "updated_at": "2026-05-11 22:37:43",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 비에스푸드 신평공장",
+   "address": "부산광역시 사하구 을숙도대로569번길 19, 1층 (신평동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-27",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3340000-106-2026-00009",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
@@ -43784,7 +43810,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3400000-106-2021-00016",
-   "updated_at": "2026-05-06 22:36:46",
+   "updated_at": "2026-10-28 22:14:56",
    "is_existing_customer": null
   },
   {
