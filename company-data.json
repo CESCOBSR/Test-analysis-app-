@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-29T00:37:56",
- "count": 4042,
+ "generated_at": "2026-10-30T00:35:21",
+ "count": 4043,
  "failed_regions": [],
  "companies": [
   {
@@ -12884,6 +12884,19 @@
    "homepage": "",
    "mgmt_no": "5350000-106-2015-00007",
    "updated_at": "2026-05-06 22:00:25",
+   "is_existing_customer": null
+  },
+  {
+   "name": "노르데나우수",
+   "address": "경상남도 함양군 함양읍 함양남서로 1229-2",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-10-26",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5460000-106-2026-00005",
+   "updated_at": "2026-10-29 21:44:55",
    "is_existing_customer": null
   },
   {
@@ -28613,7 +28626,7 @@
    "tel": "051-780-7362",
    "homepage": "",
    "mgmt_no": "3400000-106-2016-00022",
-   "updated_at": "2026-05-06 22:36:43",
+   "updated_at": "2026-10-29 22:14:56",
    "is_existing_customer": null
   },
   {
