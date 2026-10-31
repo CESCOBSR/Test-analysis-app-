@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-30T00:35:21",
- "count": 4043,
+ "generated_at": "2026-10-31T00:21:21",
+ "count": 4040,
  "failed_regions": [],
  "companies": [
   {
@@ -6669,7 +6669,7 @@
    "tel": "070-7561-6700",
    "homepage": "",
    "mgmt_no": "3330000-106-2014-00021",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-30 22:14:55",
    "is_existing_customer": null
   },
   {
@@ -11869,7 +11869,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5450000-106-2024-00004",
-   "updated_at": "2026-07-30 21:45:00",
+   "updated_at": "2026-10-30 21:44:54",
    "is_existing_customer": null
   },
   {
@@ -24102,7 +24102,7 @@
    "tel": "051-332-0087",
    "homepage": "",
    "mgmt_no": "3320000-106-2007-00004",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-10-30 22:14:55",
    "is_existing_customer": null
   },
   {
@@ -31113,19 +31113,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "어업회사법인덕진물산주식회사",
-   "address": "경상남도 통영시 산양읍 풍화일주로 808-2",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2018-06-25",
-   "closed_date": "",
-   "tel": "055-645-1888",
-   "homepage": "",
-   "mgmt_no": "5330000-106-2018-00005",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "어업회사법인우솔푸드주식회사",
    "address": "경상남도 창원시 마산합포구 진동면 태봉2길 210, 1층",
    "status": "영업/정상",
@@ -37926,7 +37913,7 @@
   },
   {
    "name": "종경식품",
-   "address": "부산광역시 사상구 괘감로 114, 1층 (감전동)",
+   "address": "부산광역시 사상구 사상로147번길 31, A동 1층, B동 1층 (감전동)",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2007-11-30",
@@ -37934,7 +37921,7 @@
    "tel": "051-322-4987",
    "homepage": "",
    "mgmt_no": "3390000-106-2007-00019",
-   "updated_at": "2026-05-08 22:31:49",
+   "updated_at": "2026-10-30 22:14:55",
    "is_existing_customer": null
   },
   {
@@ -39689,7 +39676,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3730000-106-2026-00002",
-   "updated_at": "2026-05-22 22:45:00",
+   "updated_at": "2026-10-30 22:44:55",
    "is_existing_customer": null
   },
   {
@@ -46856,19 +46843,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "태인식품",
-   "address": "경상남도 밀양시 하남읍 초하로 706-9",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2011-10-20",
-   "closed_date": "",
-   "tel": "055-391-0509",
-   "homepage": "",
-   "mgmt_no": "5360000-106-2011-00010",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "태인에프티",
    "address": "부산광역시 영도구 해양로57번길 28 (청학동)",
    "status": "영업/정상",
@@ -47243,19 +47217,6 @@
    "homepage": "",
    "mgmt_no": "3400000-106-2016-00007",
    "updated_at": "2026-05-06 22:36:42",
-   "is_existing_customer": null
-  },
-  {
-   "name": "통영오가네수산",
-   "address": "경상남도 통영시 용남면 원평길 373, 1층 2층",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2021-02-26",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5330000-106-2021-00001",
-   "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
   {
