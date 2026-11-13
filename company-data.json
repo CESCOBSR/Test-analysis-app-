@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-12T02:12:51",
- "count": 4033,
+ "generated_at": "2026-11-13T01:44:21",
+ "count": 4032,
  "failed_regions": [],
  "companies": [
   {
@@ -33974,7 +33974,7 @@
   },
   {
    "name": "우미푸드",
-   "address": "부산광역시 강서구 대저중앙로 116, 일부 1층 (대저1동)",
+   "address": "부산광역시 강서구 대저중앙로375번길 46, 1층, 2층 일부 (대저1동)",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2025-01-24",
@@ -33982,7 +33982,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3360000-106-2025-00002",
-   "updated_at": "2026-05-09 22:38:57",
+   "updated_at": "2026-11-11 22:14:48",
    "is_existing_customer": null
   },
   {
@@ -48715,19 +48715,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "하율식품",
-   "address": "울산광역시 울주군 삼남읍 신안길 65-2",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2020-02-18",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "3730000-106-2020-00001",
-   "updated_at": "2026-05-06 22:45:35",
-   "is_existing_customer": null
-  },
-  {
    "name": "하이푸드",
    "address": "부산광역시 기장군 기장읍 청강로85번길 40",
    "status": "영업/정상",
@@ -50635,7 +50622,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3290000-106-2023-00003",
-   "updated_at": "2026-05-11 22:37:54",
+   "updated_at": "2026-11-11 22:14:47",
    "is_existing_customer": null
   },
   {
