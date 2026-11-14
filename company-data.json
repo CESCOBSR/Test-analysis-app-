@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-13T01:44:21",
- "count": 4032,
+ "generated_at": "2026-11-14T01:16:37",
+ "count": 4030,
  "failed_regions": [],
  "companies": [
   {
@@ -22650,19 +22650,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "바이스벌사 로스터리",
-   "address": "부산광역시 부산진구 서전로57번길 27, 1층 (전포동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2021-05-25",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "3290000-106-2021-00007",
-   "updated_at": "2026-05-11 22:37:49",
-   "is_existing_customer": null
-  },
-  {
    "name": "바이스벌사 컴퍼니",
    "address": "부산광역시 부산진구 중앙대로824번길 12-1, 1층 일부호 (전포동)",
    "status": "영업/정상",
@@ -27890,19 +27877,6 @@
   },
   {
    "name": "소풍",
-   "address": "경상남도 밀양시 산내면 산내로 1285-18, 1층",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2022-06-07",
-   "closed_date": "",
-   "tel": "",
-   "homepage": "",
-   "mgmt_no": "5360000-106-2022-00004",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
-   "name": "소풍",
    "address": "경상남도 거제시 둔덕면 산방1길 10, 1층",
    "status": "영업/정상",
    "detail_status": "영업",
@@ -28288,7 +28262,7 @@
    "tel": "051-557-1356",
    "homepage": "",
    "mgmt_no": "3300000-106-2015-00009",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-11-12 22:14:46",
    "is_existing_customer": null
   },
   {
@@ -35234,19 +35208,6 @@
    "is_existing_customer": null
   },
   {
-   "name": "윤연파티시에",
-   "address": "경상남도 양산시 배움터길 150 (평산동)",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2019-06-11",
-   "closed_date": "",
-   "tel": "055-363-1130",
-   "homepage": "",
-   "mgmt_no": "5380000-106-2019-00015",
-   "updated_at": "2025-12-15 16:15:28",
-   "is_existing_customer": null
-  },
-  {
    "name": "윤진명가",
    "address": "경상남도 창녕군 영산면 영산월령로 414-16",
    "status": "영업/정상",
@@ -41588,6 +41549,19 @@
    "homepage": "",
    "mgmt_no": "3730000-106-2013-00020",
    "updated_at": "2026-05-06 22:45:32",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 해마푸드",
+   "address": "경상남도 의령군 의령읍 구룡로1길 14-12",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-11",
+   "closed_date": "",
+   "tel": "055-713-3353",
+   "homepage": "",
+   "mgmt_no": "5390000-106-2026-00002",
+   "updated_at": "2026-11-12 21:44:47",
    "is_existing_customer": null
   },
   {
