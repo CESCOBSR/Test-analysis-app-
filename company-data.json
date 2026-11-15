@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-14T01:16:37",
- "count": 4030,
+ "generated_at": "2026-11-15T00:48:01",
+ "count": 4033,
  "failed_regions": [],
  "companies": [
   {
@@ -1820,7 +1820,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5670123-106-2026-00003",
-   "updated_at": "2026-08-06 21:45:00",
+   "updated_at": "2026-11-13 21:44:47",
    "is_existing_customer": null
   },
   {
@@ -5902,7 +5902,7 @@
    "tel": "055-264-3901",
    "homepage": "",
    "mgmt_no": "5670123-106-2020-00008",
-   "updated_at": "2026-05-10 22:09:30",
+   "updated_at": "2026-11-13 21:44:47",
    "is_existing_customer": null
   },
   {
@@ -9955,10 +9955,10 @@
    "detail_status": "영업",
    "permit_date": "2023-06-26",
    "closed_date": "",
-   "tel": "055-547-4194",
+   "tel": "055-547-4971",
    "homepage": "",
    "mgmt_no": "5670206-106-2023-00003",
-   "updated_at": "2026-05-10 22:09:47",
+   "updated_at": "2026-11-13 21:44:48",
    "is_existing_customer": null
   },
   {
@@ -11119,6 +11119,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "근수식품",
+   "address": "부산광역시 기장군 기장읍 동뫼길 20, A동 1층 일부호",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-12",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3400000-106-2026-00021",
+   "updated_at": "2026-11-13 22:14:46",
+   "is_existing_customer": null
+  },
+  {
    "name": "근영제과",
    "address": "경상남도 양산시 상북면 내전1길 36-14, 2층",
    "status": "영업/정상",
@@ -12207,7 +12220,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "5670123-106-2025-00006",
-   "updated_at": "2026-08-06 21:45:00",
+   "updated_at": "2026-11-13 21:44:47",
    "is_existing_customer": null
   },
   {
@@ -20229,6 +20242,19 @@
    "homepage": "",
    "mgmt_no": "3730000-106-2017-00017",
    "updated_at": "2026-05-06 22:45:34",
+   "is_existing_customer": null
+  },
+  {
+   "name": "마당반찬",
+   "address": "경상남도 창원시 진해구 냉천로 149-7, 1층 일부호 (자은동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-12",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "5670206-106-2026-00005",
+   "updated_at": "2026-11-13 21:44:48",
    "is_existing_customer": null
   },
   {
@@ -39481,7 +39507,7 @@
    "tel": "055-835-5474",
    "homepage": "",
    "mgmt_no": "5340000-106-2023-00003",
-   "updated_at": "2026-05-10 22:05:47",
+   "updated_at": "2026-11-13 21:45:31",
    "is_existing_customer": null
   },
   {
@@ -40951,6 +40977,19 @@
    "homepage": "",
    "mgmt_no": "3690000-106-2026-00002",
    "updated_at": "2026-10-14 22:45:01",
+   "is_existing_customer": null
+  },
+  {
+   "name": "주식회사 청담원",
+   "address": "경상남도 진주시 문산읍 월아산로996번길 20, [주1]",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-12",
+   "closed_date": "",
+   "tel": "055-752-1118",
+   "homepage": "",
+   "mgmt_no": "5310000-106-2026-00012",
+   "updated_at": "2026-11-13 21:44:48",
    "is_existing_customer": null
   },
   {
