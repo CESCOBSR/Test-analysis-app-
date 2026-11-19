@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T02:50:40",
+ "generated_at": "2026-11-19T02:22:20",
  "count": 4033,
  "failed_regions": [],
  "companies": [
@@ -1535,19 +1535,6 @@
    "homepage": "",
    "mgmt_no": "3260000-106-2013-00001",
    "updated_at": "2026-05-06 22:34:55",
-   "is_existing_customer": null
-  },
-  {
-   "name": "(주)대해수산",
-   "address": "경상남도 통영시 도산면 도선선창길 132",
-   "status": "영업/정상",
-   "detail_status": "영업",
-   "permit_date": "2004-07-09",
-   "closed_date": "",
-   "tel": "055-648-2180",
-   "homepage": "",
-   "mgmt_no": "5330000-106-2004-00013",
-   "updated_at": "2025-12-15 16:15:28",
    "is_existing_customer": null
   },
   {
@@ -5275,10 +5262,10 @@
    "detail_status": "영업",
    "permit_date": "2017-09-13",
    "closed_date": "",
-   "tel": "051-231-2177",
+   "tel": "",
    "homepage": "",
    "mgmt_no": "3340000-106-2017-00014",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-11-17 22:14:44",
    "is_existing_customer": null
   },
   {
@@ -11181,6 +11168,19 @@
    "homepage": "",
    "mgmt_no": "5330000-106-2013-00011",
    "updated_at": "2025-12-15 16:15:28",
+   "is_existing_customer": null
+  },
+  {
+   "name": "글로벌영농조합법인",
+   "address": "경상남도 함안군 칠서면 본용성길 143-58, B동 1층 및 A동 1층 일부",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-16",
+   "closed_date": "",
+   "tel": "055-586-0219",
+   "homepage": "",
+   "mgmt_no": "5400000-106-2026-00002",
+   "updated_at": "2026-11-17 21:44:43",
    "is_existing_customer": null
   },
   {
