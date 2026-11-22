@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21T02:03:25",
- "count": 4033,
+ "generated_at": "2026-11-22T01:02:44",
+ "count": 4035,
  "failed_regions": [],
  "companies": [
   {
@@ -17736,6 +17736,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "더함유통",
+   "address": "울산광역시 남구 정동로86번길 5, 1층 (삼산동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-19",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3700000-106-2026-00004",
+   "updated_at": "2026-11-20 22:44:42",
+   "is_existing_customer": null
+  },
+  {
    "name": "덕산식품",
    "address": "경상남도 남해군 삼동면 동부대로 1008-3",
    "status": "영업/정상",
@@ -22585,8 +22598,8 @@
    "is_existing_customer": null
   },
   {
-   "name": "바른예사회적협동조합",
-   "address": "울산광역시 울주군 두서면 활천내와로 135, 1,3동",
+   "name": "바른예 방앗간",
+   "address": "울산광역시 남구 정동로 54, 1~2층 (삼산동)",
    "status": "영업/정상",
    "detail_status": "영업",
    "permit_date": "2005-10-07",
@@ -22594,7 +22607,7 @@
    "tel": "052-246-0029",
    "homepage": "",
    "mgmt_no": "3700000-106-2005-00009",
-   "updated_at": "2026-11-18 22:44:43",
+   "updated_at": "2026-11-20 22:44:42",
    "is_existing_customer": null
   },
   {
@@ -30931,6 +30944,19 @@
    "is_existing_customer": null
   },
   {
+   "name": "어라운드 푸드",
+   "address": "부산광역시 강서구 금호순서길 52, A동 1층 (대저2동)",
+   "status": "영업/정상",
+   "detail_status": "영업",
+   "permit_date": "2026-11-18",
+   "closed_date": "",
+   "tel": "",
+   "homepage": "",
+   "mgmt_no": "3360000-106-2026-00011",
+   "updated_at": "2026-11-20 22:14:42",
+   "is_existing_customer": null
+  },
+  {
    "name": "어물동웃는콩",
    "address": "울산광역시 북구 아름1길 28-10 (어물동,(1층))",
    "status": "영업/정상",
@@ -35789,7 +35815,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3720000-106-2023-00004",
-   "updated_at": "2026-05-11 22:45:23",
+   "updated_at": "2026-11-20 22:44:43",
    "is_existing_customer": null
   },
   {
@@ -46982,7 +47008,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3300000-106-2022-00007",
-   "updated_at": "2025-12-15 16:15:28",
+   "updated_at": "2026-11-20 22:14:41",
    "is_existing_customer": null
   },
   {
@@ -47372,7 +47398,7 @@
    "tel": "",
    "homepage": "",
    "mgmt_no": "3300000-106-2019-00008",
-   "updated_at": "2026-01-20 22:14:37",
+   "updated_at": "2026-11-20 22:14:41",
    "is_existing_customer": null
   },
   {
